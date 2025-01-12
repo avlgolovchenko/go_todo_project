@@ -20,8 +20,8 @@ type TaskRequest struct {
 }
 
 type TaskResponse struct {
-	ID    int64  `json:"id,omitempty"`    // ID созданной задачи
-	Error string `json:"error,omitempty"` // Сообщение об ошибке, если есть
+	ID    int64  `json:"id,omitempty"`
+	Error string `json:"error,omitempty"`
 }
 
 func HandleNextDate(w http.ResponseWriter, r *http.Request) {
